@@ -1,0 +1,67 @@
+<html>
+<head>
+<title>task 4</title>
+
+<script language="javascript" type="text/javascript">
+
+function comparing()
+{
+	var exp=/^[A-Za-z\s]{3,10}$/;
+	var str1 = document.getElementById("string1").value;
+	var str2 = document.getElementById("string2").value;   
+	var s = document.getElementById("myarea");
+	var str1_exp = exp.test(str1);
+	var str2_exp = exp.test(str2);
+
+		if(str1_exp==""){
+			alert("string1 is mandatory please fill the field with characters only");
+			document.myform.string1.focus();
+			return false;
+		}else if (str2_exp == ""){
+			alert("string2 is mandatory");
+			document.myform.string2.focus();
+			return false;
+		}
+		else{
+			if(str1 != str2)
+			{
+					if(str1 > str2)
+					{
+						s.value = str1 + " Greater than " + str2;
+					}
+					else
+					{
+						s.value = str1 + " Less than " + str2;
+					}
+			} else {
+				s.value = str1 + " Equals " + str2;
+			}				
+			return true;
+		}
+}
+
+
+</script>
+
+</head>
+<body>
+
+	<form id="form" name="myform" >
+
+		<label> Enter first String </label>	
+		<input id ="string1" type = "text" placeholder="3 to 10 letters only" title="range from 3 to 10 and letters only"/>
+		<br>
+
+		<label> Enter Second String </label>
+		<input id = "string2" type = "text" placeholder="3 to 10 letters only"  title="range from 3 to 10 and letters only"/>
+		<br>
+
+		<br>
+		
+		<input type="button" value="Compare" onclick="return comparing()">
+		<br>
+		<textarea name="name" id="myarea"></textarea>
+
+	</form>
+</body>
+</html>

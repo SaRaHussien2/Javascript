@@ -1,0 +1,44 @@
+<html>
+	<head>
+	<title>task 3</title>
+		<script language="javascript" type="text/javascript">
+		
+		
+		
+		while(1){
+		
+				var equation = prompt("Enter equation:");
+				while (!/[0-9()+\-*/.]/.test(equation)) {
+					alert("You did not enter a number.");
+					equation = prompt("Enter equation: ");
+				}
+
+
+				<!--
+			// var eq = prompt("Please Write your equation");
+			// var test=isNaN(eq);
+			-->
+			
+			try {
+				if(Number.isFinite(eval(equation))){
+					alert("The answer is " +eval(equation));
+				}
+				else{
+					alert("Can't divide by zero");
+
+				}
+			}
+			catch {
+				alert("Please enter valid equation ");
+			}
+		}
+		
+	
+		</script>
+		
+	</head>
+<body>
+	
+</body>
+
+</html>

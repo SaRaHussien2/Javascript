@@ -1,0 +1,29 @@
+<html>
+	<head>
+	<title>task 4</title>
+
+	</head>
+	<body>
+	
+		<!-- <p>Click the button to scroll the document window to the horizontally</p> -->
+		<!-- <button onclick="scrollWin()">click me to scroll horizontally</button> -->
+		
+		<button onclick="openWin()">Create new window</button> 
+		<br> <br>
+	<script language="javascript" type="text/javascript">
+		
+	var myWindow;
+		function openWin(){
+			myWindow = window.open("https://www.lipsum.com/","_blank","directories=no, status=no, menubar=no, scrollbars=no, resizable=no,width=900, height=380,top=200,left=200");
+		}	
+		/*
+		function scrollWin(){
+			window.scrollTo(400,0);
+	
+		}
+		*/
+		
+	</script>
+
+	</body>
+</html>

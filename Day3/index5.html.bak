@@ -1,0 +1,74 @@
+<html>
+	<head>
+	<title>task 1</title>
+		<script language="javascript" type="text/javascript">
+		
+
+		
+	/* var firstNumber = parseInt(prompt("Enter a first number:"));
+		while (!/^\-?\d+((\.)\d+)?$/.test(firstNumber)) {
+			alert("You did not enter a number.");
+			firstNumber = parseInt(prompt("Enter a first number: "));
+		}
+		*/
+		/*
+
+	function build() {
+  this._arrayName = prompt("name");
+  this[this._arrayName] = [];
+  this.arrayLength = prompt("length");
+  for (var i = 0; i < this.arrayLength; i++) {
+    this[this._arrayName].push(prompt("item"));
+  }
+  return this[this._arrayName];
+}
+
+console.log(build());
+	
+
+	document.write();	
+	
+	
+	*/
+	
+	
+	var firstNumber = parseInt(prompt("Enter a first number:"));
+		while (i != 3 ) {
+			
+			firstNumber = parseInt(prompt("Enter a first number: "));
+		}
+	var inputArray = [];
+	var size;
+	var i=0;
+	while ( i != 3 ) {
+			inputArray[i] = prompt('Enter Element ' + (i+1));
+			document.write("<br>"+inputArray+"<br>");
+			i++;
+
+	}
+/*
+if (i =='c'){
+	for(var i=0; i<inputArray.length; i++) {
+		
+		//Taking Input from user
+		inputArray[i] = prompt('Enter Element ' + (i+1));
+	}
+*/
+
+	//Print the array in the console.
+	console.log(inputArray);
+
+	
+
+
+
+
+
+		</script>
+		
+	</head>
+<body>
+
+</body>
+
+</html>

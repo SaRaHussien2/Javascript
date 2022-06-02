@@ -1,0 +1,24 @@
+<html>
+	<head>
+	<title>task 1</title>
+
+		
+	</head>
+<body>
+
+	<button onclick="myFunc()">Try it</button>
+	<p id="para"></p>
+		<script language="javascript" type="text/javascript">
+		
+		var fruits = ["Banana","Orange", "Apple", "Mango"];
+
+		var fruits_str = fruits.join(" and ");
+
+		function myFunc(){
+			document.getElementById("para").innerHTML=fruits_str;
+		}
+		
+		</script>
+</body>
+
+</html>

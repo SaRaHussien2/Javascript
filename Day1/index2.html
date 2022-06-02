@@ -1,0 +1,38 @@
+<html>
+	<head>
+	<title>task 2</title>
+		<script language="javascript" type="text/javascript">
+		
+			do {
+				var firstNumber = prompt("Enter a first number:");
+				while (!/^\-?\d+((\.)\d+)?$/.test(firstNumber)) {
+					alert("You did not enter a number.");
+					firstNumber = prompt("Enter a first number: ");
+				}
+
+				var secondNumber = prompt("Enter a second number:");
+				while (!/^\-?\d+((\.)\d+)?$/.test(secondNumber)) {
+					alert("You did not enter a number.");
+					secondNumber = prompt("Enter a second number: ");
+				}
+				
+				if(firstNumber > secondNumber)
+				{
+					alert(firstNumber+" is larger");
+
+				}
+				else if (firstNumber < secondNumber){
+					alert(secondNumber +" is larger");
+				}
+				else {
+					document.write("these numbers are equal");
+				}	
+			}
+			while(secondNumber != firstNumber)
+
+		</script>
+	</head>
+<body>
+</body>
+
+</html>

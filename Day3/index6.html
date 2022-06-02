@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>task 5</title>
+	</head>
+<body>
+    <!--The container where I'll add the dynamic ul and li elements.-->
+    <div id='container'></div>
+</body>
+	<script>
+		function myList(){
+			var inputValue = prompt("Please write a word OR enter c to exit");
+			while(inputValue != "c"){
+				if(isNaN(inputValue)){
+					var parent = document.getElementById("list");
+					var child = document.createElement("li");
+					var promNode = document.createTextNode(inputValue);
+					child.appendChild(promNode);
+					parent.appendChild(child);	
+				}
+				else if(inputValue === null){
+					alert("No Cancelation");
+				}
+				else {
+					alert("Please enter valid characters");
+				}
+			inputValue= prompt("write a word here: enter c to exit");
+			}
+		}
+	</script>
+	<body onload="myList()">
+		<ul id="list"></ul>
+	</body>
+</html>

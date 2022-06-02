@@ -1,0 +1,90 @@
+<html>
+	<head>
+	<title>task 3</title>
+	<script language="javascript" type="text/javascript">
+		/*
+		
+		 function addText() {
+
+		  var text = document.getElementById('text').value
+		  
+		  var header1 = document.getElementById('header1').value
+	  
+	  
+		  if(text != '') {
+			document.getElementById('message').innerHTML = text;
+		  
+		  }
+
+
+		}
+		
+		*/
+		
+
+		function createText(){
+			var parentText = document.getElementById("demo");
+			var childText = document.createElement("p");
+			var text = document.createTextNode("Saraaaa");
+			
+
+					
+			childText.appendChild(text);
+			parentText.appendChild(childText);
+			
+			//var demo = document.getElementById("demo");
+			//parentText.insertBefore(childText,demo);
+			
+			//var demo2 = document.getElementById("demo2");
+			//demo2.setAttribute("align","center");
+	
+		}
+	function createHeader(){
+			var parentHeader = document.getElementById("demo2");
+			var childHeader = document.createElement("h2");
+			var header = document.createTextNode("Hello");
+			
+			childHeader.appendChild(header);
+			parentHeader.appendChild(childHeader);
+			
+			//var demo = document.getElementById("demo");
+			//parentHeader.insertBefore(childHeader,demo2);
+			
+		
+		}
+	</script>
+	</head>
+	<body>
+	
+	
+		
+		<div  id="myDiv">
+			<!-- <button class="clickMe" onclick="displayUsername()">Click ME!</button> -->
+	
+			<input type="button" value="createText" onclick="createText()" name="text" id="text">
+
+			<input type="button" value="createHeader" onclick="createHeader()" name="header" id="header">
+
+			<p id="demo">New text will appear below here</p>
+
+			<p id="demo2">Some further H text in the page</p>
+
+
+		<div id="message"></div>
+	</div>
+	
+	
+	
+
+	
+		<!-- 
+		<p>
+			<input type="button" onclick="addText()" value="click on me to add text " />
+			
+			<input type="button" onclick="addText()" value="click on me to add text " />
+		</p>
+		<p id="demo">New text will appear below here</p>
+		<p id="demo2">Some further H text in the page</p> 
+		-->
+	</body>
+</html>

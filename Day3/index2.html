@@ -1,0 +1,60 @@
+<html>
+	<head>
+	<title>task 2</title>
+	<script language="javascript" type="text/javascript">
+		
+
+		function validate(){
+			
+			var name_exp=/^[A-Za-z\s]{3,10}$/;
+			var name= document.myform.name.value;
+			var age =document.myform.age.value;
+			var email =document.myform.email.value;
+			
+			var name_result = name_exp.test(name);
+			
+			if(name_result==""){
+				alert("name is mandatory please fill the field with characters only");
+				document.myform.name.focus();
+				return false;
+			}else if (age == ""){
+				alert("age is mandatory");
+				document.myform.age.focus();
+				return false;
+			}else if (isNaN(age) || age<1 || age>100){
+				alert("age is mandatory and please enter a valid number between 1-100");
+				document.myform.age.focus();
+				return false;
+			}
+			else if (email == ""){
+				alert("email is mandatory");
+				document.myform.email.focus();
+				return false;
+			}
+			else{
+				alert("Validation Successfully");
+				return true;
+				}		
+		}
+		
+	</script>
+	</head>
+<body>
+	<h3> Simple Form</h3>
+		<form name="myform" action="index.php" onsubmit="return validate()">
+			<label>Name(max 10 characters)</label>
+			<input type="text" name="name">
+			<br>
+			
+			<label>Age (from 1 to 100)</label>
+			<input type="number" name="age">
+			<br>
+
+			<label>Email</label>
+			<input type="email" name="email">
+			<br>
+
+			<input type="submit" value="submit">
+		</form>
+</body>
+</html>

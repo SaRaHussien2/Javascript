@@ -1,0 +1,51 @@
+<html>
+	<head>
+	<title>task 3</title>
+
+		
+	</head>
+<body>
+	
+	<button onclick="show_Now()">Now</button> 
+	<button onclick="show_yesterday()">Yesterday</button>
+
+	<button onclick="show_TenYears()">Ten Years ago</button>
+	<button onclick="show_OneWeek()">In One Week</button>
+
+	<p id="para"></p>
+	
+		<script language="javascript" type="text/javascript">
+		
+		function show_Now()
+			{
+				var curr = new Date();
+				window.alert("The time and date are: " + curr.toString());
+			}
+		function show_yesterday() 
+		{
+			var yesterday = new Date();
+			yesterday.setTime(yesterday.valueOf() - 24 * 60 * 60 * 1000);
+			window.alert("24 hours age, the time and date were: " + yesterday.toString());
+		}
+
+		function show_TenYears()
+		{	
+			var tenYears = new Date();
+			tenYears.setTime(tenYears.valueOf() - 10 * 365 * 24 * 60 * 60 * 1000);
+			window.alert("10 years ago, the time and date were: " + tenYears.toString());
+		}
+
+		function show_OneWeek()
+		{	
+			var oneWeek = new Date();
+			oneWeek.setTime(oneWeek.valueOf() + 7 * 24 * 60 * 60 * 1000);
+			window.alert("In one week, the time and date will be: " + oneWeek.toString());
+		}
+		
+		
+
+		
+		</script>
+</body>
+
+</html>

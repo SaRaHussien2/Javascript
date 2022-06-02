@@ -1,0 +1,43 @@
+<html>
+	<head>
+	<title>task 1</title>
+		<script language="javascript" type="text/javascript">
+		
+		var firstNumber = parseInt(prompt("Enter a first number:"));
+		while (!/^[0-9]+$/.test(firstNumber)) {
+			alert("You did not enter a number.");
+			firstNumber = parseInt(prompt("Enter a first number: "));
+		}
+
+		var secondNumber = parseInt(prompt("Enter a second number:"));
+		while (!/^[0-9]+$/.test(secondNumber)) {
+			alert("You did not enter a number.");
+			secondNumber = parseInt(prompt("Enter a second number: "));
+		}
+
+		
+		var	sum = firstNumber + secondNumber; 
+		var	product = firstNumber * secondNumber;
+		var	difference = firstNumber - secondNumber;
+		
+		if(secondNumber != 0){
+			var	division = firstNumber / secondNumber;
+		}else{
+			var	division = " Can't devided by zero";	
+		
+		}
+		
+		document.write("<br>"+"sum ="+ sum);
+		document.write("<br>"+"product ="+ product);
+		document.write("<br>"+"difference ="+ difference);
+		document.write("<br>"+"division ="+ division);
+
+		
+		</script>
+		
+	</head>
+<body>
+	
+</body>
+
+</html>
